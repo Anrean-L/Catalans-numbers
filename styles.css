@@ -1,0 +1,34 @@
+body, h1, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.125rem;
+}
+
+.header {
+    min-height: 100lvh;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 900px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.header__title {}
+
+.header__definition {}
+
+.calculating {}
+
+.calculating__text {}
+
+.calculating__formula {}
+
+.calculating__input {}
+
+.caluclating__result {}
