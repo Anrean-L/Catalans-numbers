@@ -1,34 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
 body, h1, p {
     margin: 0;
 }
 
 body {
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.125rem;
-}
-
-.header {
-    min-height: 100lvh;
-    background-color: #000000;
-    color: #FFFFFF;
+    font-size: clamp(1.125rem, 4vw, 1.8rem);
 }
 
 .container {
-    max-width: 900px;
-    padding: 50px;
+    max-width: 800px;
+    padding: 0 28px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    min-height: 100lvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index {
+    vertical-align: bottom;
+    font-size: 0.875rem;
+}
+
+.header {
+    color: #FFFFFF;
+    flex-direction: column;
+    background: fixed top 55px right 34px / clamp(130px, 18vw, 165px) no-repeat url('imgs/ornament11.svg'),
+        fixed top calc(100svh - clamp(130px, 20lvh, 181px)) left 30px / clamp(130px, 20lvh, 181px) no-repeat url('imgs/ornament12.svg');
+    background-color: #000000;
+}
+
+.header__title {
+    font-size: clamp(1.9rem, 9vw, 4rem);
+    margin-bottom: 32px;
+    letter-spacing: 0.3vw;
+    animation: title 3s ease-in-out;
+    white-space: nowrap;
+}
+
+.calculating {
+    color: #000000;
+    background: 0 0 / clamp(130px, 18vw, 165px) no-repeat url('imgs/ornament21.svg'),
+        bottom 30px right 0 no-repeat url('imgs/ornament22.svg');
+    background-color: #72B2E1;
+}
+
+.calculating__text {
+    margin-bottom: 20px;
+}
+
+.calculating__formula {
+    width: min(330px, 100%);
+    margin: 0 auto 70px;
+    display: block;
+}
+
+.calculating__input {
+    font-family: inherit;
+    display: block;
+    background-color: #00000033;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 12px 30px;
+    color: #FFFFFF;
+    font-size: 2rem;
+    width: 200px;
     margin: 0 auto;
 }
 
-.header__title {}
+.calculating__input:focus {
+    outline: none;
+}
 
-.header__definition {}
+.caluclating__result {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2rem;
+}
 
-.calculating {}
+.brackets {}
 
-.calculating__text {}
+.brackets__gif {}
 
-.calculating__formula {}
+.brackets__title {}
 
-.calculating__input {}
+.brackets__paragraph {}
 
-.caluclating__result {}
+.brackets__paragraph--right {}
+
+.brackets__example {}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        letter-spacing: 0.3vw;
+    }
+
+    1% {
+        opacity: 0;
+        letter-spacing: 40px;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 0.3vw;
+    }
+}
