@@ -12,6 +12,10 @@ body {
     color: #FFFFFF;
 }
 
+noscript {
+    font-size: 0.8em;
+}
+
 .container {
     max-width: 800px;
     padding: 0 28px;
@@ -136,10 +140,6 @@ body {
     color: #000000;
 }
 
-.slide {}
-
-.container {}
-
 .examples__problem {
     margin: 20px 0;
 }
@@ -170,6 +170,23 @@ body {
 .examples__overlay--hidden {
     opacity: 0;
     visibility: hidden;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #222222;
+    color: #CCCCCC;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer__email {
+    color: inherit;
+}
+
+.footer__ending {
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 @keyframes title {
