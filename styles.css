@@ -8,11 +8,13 @@ body, h1, h2, p {
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: clamp(1.125rem, 4vw, 1.8rem);
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .container {
     max-width: 800px;
-    padding: 10px 28px;
+    padding: 0 28px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -22,6 +24,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .index {
@@ -30,11 +34,9 @@ body {
 }
 
 .header {
-    color: #FFFFFF;
     flex-direction: column;
     background: fixed top 55px right 34px / clamp(130px, 18vw, 165px) no-repeat url('imgs/ornament11.svg'),
         fixed top calc(100svh - clamp(130px, 20lvh, 181px)) left 30px / clamp(130px, 20lvh, 181px) no-repeat url('imgs/ornament12.svg');
-    background-color: #000000;
 }
 
 .header__title {
@@ -89,11 +91,6 @@ body {
     font-size: 2rem;
 }
 
-.brackets {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
 .brackets__gif-wrapper {
     width: 100%;
 }
@@ -118,6 +115,20 @@ body {
 .brackets__example {
     font-size: 1.6em;
     text-align: center;
+}
+
+.recurrent {
+    padding-top: 40px;
+}
+
+.recurrent p {
+    margin: 20px 0;
+}
+
+.recurrent img {
+    display: block;
+    margin: 0 auto;
+    width: min(400px, 100%);
 }
 
 @keyframes title {
