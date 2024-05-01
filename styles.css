@@ -131,6 +131,47 @@ body {
     width: min(400px, 100%);
 }
 
+.examples {
+    background-color: #BEBEBE;
+    color: #000000;
+}
+
+.slide {}
+
+.container {}
+
+.examples__problem {
+    margin: 20px 0;
+}
+
+.examples__solvation {
+    padding: 20px 15px 30px;
+    border: 1px solid #000;
+    border-radius: 40px;
+    position: relative;
+}
+
+.examples__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaaaaa80;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.examples__overlay--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 @keyframes title {
     0% {
         opacity: 0;

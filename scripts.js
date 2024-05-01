@@ -21,3 +21,4 @@ function calculate(e) {
 }
 
 document.querySelector('.calculating__input').addEventListener('input', calculate);
+document.querySelector('.examples__overlay').addEventListener('click', (e) => e.target.classList.add('examples__overlay--hidden'))
