@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
-body, h1, p {
+body, h1, h2, p {
     margin: 0;
+    font-weight: 400;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 
 .container {
     max-width: 800px;
-    padding: 0 28px;
+    padding: 10px 28px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -25,7 +26,7 @@ body {
 
 .index {
     vertical-align: bottom;
-    font-size: 0.875rem;
+    font-size: 0.6em;
 }
 
 .header {
@@ -49,6 +50,10 @@ body {
     background: 0 0 / clamp(130px, 18vw, 165px) no-repeat url('imgs/ornament21.svg'),
         bottom 30px right 0 no-repeat url('imgs/ornament22.svg');
     background-color: #72B2E1;
+}
+
+.calculating h2 {
+    margin-bottom: 10px;
 }
 
 .calculating__text {
@@ -84,17 +89,36 @@ body {
     font-size: 2rem;
 }
 
-.brackets {}
+.brackets {
+    background-color: #000000;
+    color: #FFFFFF;
+}
 
-.brackets__gif {}
+.brackets__gif-wrapper {
+    width: 100%;
+}
 
-.brackets__title {}
+.brackets__gif {
+    object-fit: cover;
+    width: 100%;
+}
 
-.brackets__paragraph {}
+.brackets__title {
+    margin-bottom: 0.75em;
+}
 
-.brackets__paragraph--right {}
+.brackets__paragraph {
+    margin-bottom: 1.3em;
+}
 
-.brackets__example {}
+.brackets__paragraph--right {
+    text-align: right;
+}
+
+.brackets__example {
+    font-size: 1.6em;
+    text-align: center;
+}
 
 @keyframes title {
     0% {
