@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'),
+        url('fonts/Montserrat.woff2') format('woff2'),
+        url('fonts/Montserrat.woff') format('woff'),
+        url('fonts/Montserrat.ttf');
+}
 
 body, h1, h2, p {
     margin: 0;
@@ -162,7 +168,7 @@ noscript {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0.2em);
     cursor: pointer;
     transition: all .5s;
 }
