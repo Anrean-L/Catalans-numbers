@@ -26,7 +26,6 @@ noscript {
     max-width: 800px;
     padding: 0 28px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .slide {
@@ -36,6 +35,7 @@ noscript {
     justify-content: center;
     padding: 20px 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .index {
@@ -182,8 +182,12 @@ noscript {
     padding: 10px;
     background-color: #222222;
     color: #CCCCCC;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
+}
+
+.footer p {
+    margin-top: 5px;
 }
 
 .footer__email {
